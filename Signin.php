@@ -24,6 +24,18 @@
 
 </head>
 <body class="login-page">
+    <div class="login-header box-shadow">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="brand-logo">
+                <a href="signin.php">
+                    <img src="vendors/images/deskapp-logo.png" alt="">
+                </a>
+            </div>
+            <!-- <div class="login-menu">
+                
+            </div> -->
+        </div>
+    </div>
     
     <div class="login-wrap d-flex align-items-center flex-wrap justify-content-center">
         <div class="container">
