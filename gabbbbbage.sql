@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `fullname`, `password`, `ucat`, `address`, `contact`, `acstatus`, `date`, `image`) VALUES
-(7, 'adarsh', 'adarshnayak', 'adarsh', 'colletor', 'adarsh', '012479963', 'active', '2022-06-22', 'Screenshot_20210321-205607.png'),
+(7, 'adarsh', 'adarshnayak', 'adarsh', 'collector', 'adarsh', '012479963', 'active', '2022-06-22', 'Screenshot_20210321-205607.png'),
 (8, 'chaitra', 'chaitrabhat', 'chaitra', 'admin', 'chaitra', '2569897654', 'active', '2022-06-22', 'Screenshot_20210324-113832.png');
 
 -- --------------------------------------------------------
@@ -73,8 +73,8 @@ CREATE TABLE IF NOT EXISTS `clients` (
 
 INSERT INTO `clients` (`id`, `names`, `pay_type`, `client_type`, `gabage_type`, `location`, `contact`, `status`, `date`) VALUES
 (25, 'Naresh', 'yearly', 'individual', 'Bio', '1', '9075846954', 'pending', '2022-11-23'),
-(26, 'Adarsh', 'monthly', 'individual', 'Bio', '2', '7795702175', 'pending', '2022-11-22'),
-(29, 'Chaitra', 'monthly', 'individual', 'Hazardous', '1', '9837362522', 'pending', '2022-11-23'),
+(26, 'Kiran', 'monthly', 'individual', 'Bio', '2', '7795702175', 'pending', '2022-11-22'),
+(29, 'Charvi', 'monthly', 'individual', 'Hazardous', '1', '9837362522', 'pending', '2022-11-23'),
 (30, 'Chaitanya', 'monthly', 'company', 'Non Hazardous', '1', '1244545', 'pending', '2022-11-24');
 
 -- --------------------------------------------------------
@@ -125,10 +125,10 @@ CREATE TABLE IF NOT EXISTS `payment` (
 --
 
 INSERT INTO `payment` (`id`, `collector`, `clientname`, `typeofwaste`, `paytype`, `amountpaid`, `date`, `recieptno`, `reason`, `balance`) VALUES
-(1, 'admin', 'Naresh', 'Bio', 'yearly', '45000', '2022-11-23', '45', 'payment for jan and feb', '120000'),
-(2, 'admin', 'Adarsh', 'Bio', 'monthly', '54000', '2022-11-23', '5455', 'PAY', '65550'),
-(3, 'adarsh', 'Chaitra', 'Hazardous', 'monthly', '15000', '2022-11-24', '1122', 'paid', '5000'),
-(4, 'chaitra', 'Chaitanya', 'Non Hazardous', 'percollection', '20000', '2022-11-25', '12452', 'paid', '5000');
+(1, 'adarsh', 'Naresh', 'Bio', 'yearly', '45000', '2022-11-23', '45', 'payment for jan and feb', '120000'),
+(2, 'adarsh', 'Kiran', 'Bio', 'monthly', '54000', '2022-11-23', '5455', 'PAY', '65550'),
+(3, 'adarsh', 'Charvi', 'Hazardous', 'monthly', '15000', '2022-11-24', '1122', 'paid', '5000'),
+(4, 'adarsh', 'Chaitanya', 'Non Hazardous', 'percollection', '20000', '2022-11-25', '12452', 'paid', '5000');
 
 -- --------------------------------------------------------
 
@@ -153,13 +153,13 @@ CREATE TABLE IF NOT EXISTS `wastecollect` (
 --
 
 INSERT INTO `wastecollect` (`id`, `collector`, `clientname`, `typeofwaste`, `paytype`, `amountpaid`, `balance`, `date`) VALUES
-(1, 'admin', 'Naresh', 'Bio', 'monthly', '10000', '', '2022-11-23'),
-(2, 'admin', 'Adarsh', 'Bio', 'percollection', '50000', '', '2022-11-23'),
-(3, 'admin', 'Chairtra', 'Hazardous', 'monthly', '51000', '', '2022-11-23'),
-(4, 'admin', 'Chaitanya', 'Non Hazardous', 'percollection', '78000', '12000', '2022-11-23'),
-(5, 'admin', 'Kiran', 'Bio', 'percollection', '85000', '52000', '2022-11-23'),
-(6, 'adarsh', 'Basava', 'Hazardous', 'monthly', '10000', '2000', '2022-11-24'),
-(7, 'chaitra', 'Rocky Bhai', 'Bio', 'percollection', '15000', '5000', '2022-11-25');
+(1, 'adarsh', 'Naresh', 'Bio', 'monthly', '10000', '', '2022-11-23'),
+(2, 'adarsh', 'Kiran', 'Bio', 'percollection', '50000', '', '2022-11-23'),
+(3, 'adarsh', 'Charvi', 'Hazardous', 'monthly', '51000', '', '2022-11-23'),
+(4, 'adarsh', 'Chaitanya', 'Non Hazardous', 'percollection', '78000', '12000', '2022-11-23'),
+(5, 'adarsh', 'Basava', 'Bio', 'percollection', '85000', '52000', '2022-11-23'),
+(6, 'adarsh', 'Ankitha', 'Hazardous', 'monthly', '10000', '2000', '2022-11-24'),
+(7, 'adarsh', 'Rocky Bhai', 'Bio', 'percollection', '15000', '5000', '2022-11-25');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
