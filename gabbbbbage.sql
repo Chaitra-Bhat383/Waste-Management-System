@@ -1,12 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 3.4.9
--- http://www.phpmyadmin.net
---
--- Host: localhost
--- Generation Time: Jul 07, 2022 at 06:39 AM
--- Server version: 5.5.20
--- PHP Version: 5.3.9
-
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
@@ -38,15 +29,15 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `date` varchar(50) NOT NULL,
   `image` varchar(500) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9;
 
 --
 -- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`id`, `username`, `fullname`, `password`, `ucat`, `address`, `contact`, `acstatus`, `date`, `image`) VALUES
-(7, 'adarsh', 'adarshnayak', 'adarsh', 'collector', 'adarsh', '012479963', 'active', '2022-06-22', 'Screenshot_20210321-205607.png'),
-(8, 'chaitra', 'chaitrabhat', 'chaitra', 'admin', 'chaitra', '2569897654', 'active', '2022-06-22', 'Screenshot_20210324-113832.png');
+(7, 'adarsh', 'adarshnayak', 'adarsh', 'collector', 'adarsh', '9632541590', 'active', '2022-06-22', 'Screenshot_20210321-205607.png'),
+(8, 'chaitra', 'chaitrabhat', 'chaitra', 'admin', 'chaitra', '8147497087', 'active', '2022-06-22', 'Chaitra Bhat.png');
 
 -- --------------------------------------------------------
 
@@ -75,7 +66,7 @@ INSERT INTO `clients` (`id`, `names`, `pay_type`, `client_type`, `gabage_type`, 
 (25, 'Naresh', 'yearly', 'individual', 'Bio', '1', '9075846954', 'pending', '2022-11-23'),
 (26, 'Kiran', 'monthly', 'individual', 'Bio', '2', '7795702175', 'pending', '2022-11-22'),
 (29, 'Charvi', 'monthly', 'individual', 'Hazardous', '1', '9837362522', 'pending', '2022-11-23'),
-(30, 'Chaitanya', 'monthly', 'company', 'Non Hazardous', '1', '1244545', 'pending', '2022-11-24');
+(30, 'Chaitanya', 'monthly', 'company', 'Non Hazardous', '1', '9441244545', 'pending', '2022-11-24');
 
 -- --------------------------------------------------------
 
